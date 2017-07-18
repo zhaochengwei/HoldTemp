@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     /** 创建ServerSocket*/
-                    // 创建一个ServerSocket在端口2013监听客户请求
                     serverSocket = new ServerSocket();
                     serverSocket.setReuseAddress(true);
                     serverSocket.bind(new InetSocketAddress(8080));
